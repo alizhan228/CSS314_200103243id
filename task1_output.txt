@@ -1,0 +1,7 @@
+CPU: AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
+Platform: Windows-11-10.0.26300-SP0 | Python 3.14.8
+Logical cores (os.cpu_count): 16
+Array size: 20,000,000 float64 elements
+Sum: 10000057.178244
+Standard deviation (population): 0.2886432865
+Execution time: 149.695 ms
