@@ -1,0 +1,17 @@
+OS: Windows 11
+Platform: Windows-11-10.0.26300-SP0 | Python 3.14.8
+Logical cores (os.cpu_count): 16
+Worker processes (N): 16 (defaulted to LOGICAL cores; pass the physical core count as argv[1] or pip install psutil)
+Increments per worker: 50,000,000
+Cache line assumed: 64 bytes | padded stride: 8 slots
+Timing: best of 3 runs per variant
+
+Variant                | Wall Time (ms)
+-----------------------+----------------
+Unpadded Shared        |      19493.174
+Padded (64-byte)       |      15241.736
+Local variable         |       5254.778
+
+Execution ratio (Unpadded / Padded): 1.28x slower
+Execution ratio (Unpadded / Local):  3.71x slower
+Result check (all counters == 50,000,000): PASS
